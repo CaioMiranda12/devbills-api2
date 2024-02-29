@@ -1,6 +1,6 @@
 import { CategoriesRepository } from '../database/repositories/categories.repository';
 import { CategoryModel } from '../schemas/category.schema';
-import { CategoriesServices } from '../services/categories.services';
+import { CategoriesServices } from '../services/categories.service';
 
 export class CategoriesFactory {
   private static categoriesService: CategoriesServices;

@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import { StatusCodes } from 'http-status-codes';
 
 import { CreateCategoryDTO } from '../dtos/categories.dto';
-import { CategoriesServices } from '../services/categories.services';
+import { CategoriesServices } from '../services/categories.service';
 
 export class CategoriesController {
   constructor(private categoriesService: CategoriesServices) {}
