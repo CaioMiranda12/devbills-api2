@@ -26,8 +26,8 @@ export class Transaction {
     this._id = _id;
     this.title = title;
     this.amount = amount;
-    this.category = new Category(category);
     this.date = new Date(date);
+    this.category = new Category(category);
     this.type = type;
   }
 }

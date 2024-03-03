@@ -7,7 +7,7 @@ export const createTransitionSchema = {
   amount: z.number().int().positive(),
   type: z.nativeEnum(TransactionType),
   date: z.coerce.date(),
-  categoryId: z.string(),
+  categoryId: z.string().length(24),
 };
 
 const createdTransactionObject = z.object(createTransitionSchema);
